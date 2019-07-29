@@ -1,0 +1,157 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_0556c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_0556c.dir/build.make CMakeFiles/cmTC_0556c.dir/build
+gmake[1]: Entering directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0556c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_0556c.dir/CheckSymbolExists.c.o   -c /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0556c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_0556c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0556c.dir/CheckSymbolExists.c.o  -o cmTC_0556c 
+CMakeFiles/cmTC_0556c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_0556c] Error 1
+gmake[1]: Leaving directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_0556c/fast] Error 2
+
+File /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c0325/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c0325.dir/build.make CMakeFiles/cmTC_c0325.dir/build
+gmake[1]: Entering directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0325.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c0325.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c0325
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_c0325.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c0325.dir/CheckFunctionExists.c.o  -o cmTC_c0325 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_c0325] Error 1
+gmake[1]: Leaving directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c0325/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e1388/fast"
+gmake[1]: Entering directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_e1388.dir/build.make CMakeFiles/cmTC_e1388.dir/build
+gmake[2]: Entering directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1388.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e1388.dir/CheckSymbolExists.c.o   -c /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e1388
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_e1388.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e1388.dir/CheckSymbolExists.c.o  -o cmTC_e1388 
+CMakeFiles/cmTC_e1388.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_e1388] Error 1
+gmake[2]: Leaving directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_e1388/fast] Error 2
+gmake[1]: Leaving directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+
+File /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3be73/fast"
+gmake[1]: Entering directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_3be73.dir/build.make CMakeFiles/cmTC_3be73.dir/build
+gmake[2]: Entering directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3be73.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3be73.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3be73
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_3be73.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3be73.dir/CheckFunctionExists.c.o  -o cmTC_3be73 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [cmTC_3be73] Error 1
+gmake[2]: Leaving directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_3be73/fast] Error 2
+gmake[1]: Leaving directory `/home/csmajs/ksiva001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5f234/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5f234.dir/build.make CMakeFiles/cmTC_5f234.dir/build
+gmake[1]: Entering directory `/home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f234.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5f234.dir/CheckSymbolExists.c.o   -c /home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5f234
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_5f234.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5f234.dir/CheckSymbolExists.c.o  -o cmTC_5f234 
+CMakeFiles/cmTC_5f234.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_5f234] Error 1
+gmake[1]: Leaving directory `/home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_5f234/fast] Error 2
+
+File /home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3c970/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3c970.dir/build.make CMakeFiles/cmTC_3c970.dir/build
+gmake[1]: Entering directory `/home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c970.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3c970.dir/CheckFunctionExists.c.o   -c /usr/share/cmake3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3c970
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_3c970.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3c970.dir/CheckFunctionExists.c.o  -o cmTC_3c970 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [cmTC_3c970] Error 1
+gmake[1]: Leaving directory `/home/csmajs/znain001/lab-09-visitor-pattern-zaddy_lab09/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3c970/fast] Error 2
+
+
